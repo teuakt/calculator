@@ -1,0 +1,106 @@
+@import "./css/_reset.scss";
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+}
+
+.calculator {
+    width: 352px;
+    height: 840px;
+    background-color: $backgroundBlack;
+    border-radius: 30px;
+    padding: 15px 20px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        font-size: calculator-rem(14);
+        margin-left: 25px;
+    }
+    &__display {
+        margin-top: 50px;
+    }
+
+    &__display-input {
+        background: transparent;
+        outline: transparent;
+        width: 100%;
+        border: 0;
+        color: $white;
+        text-align: right;
+        font-size: calculator-rem(48);
+    }
+
+    &__display-result {
+        color: $lightGrey;
+        width: 100%;
+        text-align: right;
+        font-size: calculator-rem(48);
+        margin-top: 80px;
+    }
+
+    &__rollback {
+        margin-top: 30px;
+    }
+
+    &__break-line {
+        width: 100%;
+        height: 1px;
+        background-color: $borderGrey;
+        margin-top: 20px;
+    }
+
+    &__buttons-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buttons {
+        margin-top: 5px;
+        &--button {
+            width: 73px;
+            height: 75px;
+            background-color: $darkGrey;
+            color: $white;
+            border: 0;
+            border-radius: 9px;
+            margin-top: 20px;
+            font-size: calculator-rem(36);
+            &:hover {
+                background-color: lighten($darkGrey, 30%);
+            }
+        }
+
+        &--button-background-red {
+            background-color: $red;
+            color: $darkGrey;
+            &:hover {
+                background-color: lighten($red, 20%);
+            }
+        }
+        &--button-background-green {
+            background-color: $green;
+            color: $darkGrey;
+            &:hover {
+                background-color: lighten($green, 20%);
+            }
+        }
+        &--button-font-green {
+            color: $green;
+            font-size: calculator-rem(24);
+        }
+    }
+    &__footer {
+        width: 135px;
+        height: 5px;
+        background-color: $white;
+        border-radius: 100px;
+        margin: 25px 30% 0 32%;
+    }
+}
+
+

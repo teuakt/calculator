@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <article class="container calculator">
+      <div class="calculator__header">
+        <span>9:41</span>
+        <div>
+          <img src="./assets/Connection.png" alt="Ícone que indica a força de conexão da rede de celular" />
+          <img src="./assets/Wifi.png" alt="Ícone que indica a força da conexão Wi-Fi" />
+          <img src="./assets/Battery.png" alt="Ícone que indica a quantidade de bateria atual do celular" />
+        </div>
+      </div>
+      <div class="calculator__display">
+        <input type="text" class="calculator__display-input" value="2+7" />
+        <div class="calculator__display-result">9</div>
+      </div>
+      <div class="calculator__rollback">
+        <img src="./assets/rollback.png" alt="Botão que mostra os ultimos cálculos realizados" />
+      </div>
+      <div class="calculator__break-line"></div>
+      <div class="calculator__buttons">
+        <div class="calculator__buttons-wrapper">
+          <button
+            class="calculator__buttons--button calculator__buttons--button-background-red"
+          >
+            C
+          </button>
+          <button
+            class="calculator__buttons--button calculator__buttons--button-font-green"
+          >
+            ()
+          </button>
+          <button
+            class="calculator__buttons--button calculator__buttons--button-font-green"
+          >
+            %
+          </button>
+          <button
+            class="calculator__buttons--button calculator__buttons--button-font-green"
+          >
+            ÷
+          </button>
+        </div>
+        <div class="calculator__buttons-wrapper">
+          <button class="calculator__buttons--button">7</button>
+          <button class="calculator__buttons--button">8</button>
+          <button class="calculator__buttons--button">9</button>
+          <button
+            class="calculator__buttons--button calculator__buttons--button-font-green"
+          >
+            x
+          </button>
+        </div>
+        <div class="calculator__buttons-wrapper">
+          <button class="calculator__buttons--button">4</button>
+          <button class="calculator__buttons--button">5</button>
+          <button class="calculator__buttons--button">6</button>
+          <button
+            class="calculator__buttons--button calculator__buttons--button-font-green"
+          >
+            -
+          </button>
+        </div>
+        <div class="calculator__buttons-wrapper">
+          <button class="calculator__buttons--button">1</button>
+          <button class="calculator__buttons--button">2</button>
+          <button class="calculator__buttons--button">3</button>
+          <button
+            class="calculator__buttons--button calculator__buttons--button-font-green"
+          >
+            +
+          </button>
+        </div>
+        <div class="calculator__buttons-wrapper">
+          <button class="calculator__buttons--button">+/-</button>
+          <button class="calculator__buttons--button">0</button>
+          <button class="calculator__buttons--button">.</button>
+          <button
+            class="calculator__buttons--button calculator__buttons--button-background-green"
+          >
+            =
+          </button>
+        </div>
+      </div>
+      <div class="calculator__footer"></div>
+    </article>
+  </body>
+</html>

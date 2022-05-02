@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  font-family: "Inter";
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+}
+
+.calculator {
+  width: 352px;
+  height: 840px;
+  background-color: #292626;
+  border-radius: 30px;
+  padding: 15px 20px;
+}
+
+.calculator__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.875rem;
+  margin-left: 25px;
+}
+
+.calculator__display {
+  margin-top: 50px;
+}
+
+.calculator__display-input {
+  background: transparent;
+  outline: transparent;
+  width: 100%;
+  border: 0;
+  color: #FFFFFF;
+  text-align: right;
+  font-size: 3rem;
+}
+
+.calculator__display-result {
+  color: #969696;
+  width: 100%;
+  text-align: right;
+  font-size: 3rem;
+  margin-top: 80px;
+}
+
+.calculator__rollback {
+  margin-top: 30px;
+}
+
+.calculator__break-line {
+  width: 100%;
+  height: 1px;
+  background-color: #4E4D4D;
+  margin-top: 20px;
+}
+
+.calculator__buttons-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calculator__buttons {
+  margin-top: 5px;
+}
+
+.calculator__buttons--button {
+  width: 73px;
+  height: 75px;
+  background-color: #343434;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 9px;
+  margin-top: 20px;
+  font-size: 2.25rem;
+}
+
+.calculator__buttons--button:hover {
+  background-color: #818181;
+}
+
+.calculator__buttons--button-background-red {
+  background-color: #FF5959;
+  color: #343434;
+}
+
+.calculator__buttons--button-background-red:hover {
+  background-color: #ffbfbf;
+}
+
+.calculator__buttons--button-background-green {
+  background-color: #52DF68;
+  color: #343434;
+}
+
+.calculator__buttons--button-background-green:hover {
+  background-color: #a8efb3;
+}
+
+.calculator__buttons--button-font-green {
+  color: #52DF68;
+  font-size: 1.5rem;
+}
+
+.calculator__footer {
+  width: 135px;
+  height: 5px;
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  margin: 25px 30% 0 32%;
+}
+/*# sourceMappingURL=styles.css.map */
